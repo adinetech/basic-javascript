@@ -105,3 +105,14 @@ JavaScript uses the `*` symbol for multiplication of two numbers.
 ```js
 myVar = 13 * 13; // assigned 169
 ```
+
+## Basic JavaScript: Divide One Number by Another with JavaScript
+> We can also divide one number by another.
+
+JavaScript uses the `/` symbol for division.
+
+### Example
+```js
+myVar = 16 / 2; // assigned 8
+```
+
