@@ -422,6 +422,7 @@ ourStr += anAdjective;
 ```
 
 ## Basic JavaScript: Find the Length of a String
+
 > You can find the length of a String value by writing .length after the string variable or string literal.
 
 ```js
@@ -430,4 +431,50 @@ ourStr += anAdjective;
 
 For example, if we created a variable `var firstName = "Sudhan"`, we could find out how long the string `"Sudhan"` is by using the firstName.length property.
 
-## 
+## Basic JavaScript: Use Bracket Notation to Find the First Character in a String
+
+> Bracket notation is a way to get a character at a specific index within a string.
+
+- Most modern programming languages, like JavaScript, don't start counting at `1` like humans do. They sta>rt at 0. This is referred to as Zero-based indexing.
+
+For example, the character at index `0` in the word `"Sudhan"` is `"S"`. So if `var firstName = "Sudhan"`, you can get the value of the first letter of the string by using firstName`[0]`.
+
+### Example:
+
+```js
+var firstName = "Charles";
+var firstLetter = firstName[0]; // firstLetter is "C"
+```
+
+## Basic JavaScript: Understand String Immutability
+
+> In JavaScript, String values are immutable, which means that they cannot be altered once created.
+
+For example, the following code:
+
+```js
+var myStr = "Bob";
+myStr[0] = "J";
+```
+
+> cannot change the value of `myStr` to `"Job"`, because the contents of `myStr` cannot be altered. Note that this does not mean that `myStr` cannot be changed, just that the individual characters of a string literal cannot be changed. The only way to change `myStr` would be to assign it with a new `string`, like this:
+
+```js
+var myStr = "Bob";
+myStr = "Job";
+```
+
+## Basic JavaScript: Use Bracket Notation to Find the Nth Character in a String
+
+> You can also use bracket notation to get the character at other positions within a `string`.
+
+- Remember that computers start counting at `0`, so the first character is actually the zeroth character.
+
+### Example:
+
+```js
+var firstName = "Ada";
+var secondLetterOfFirstName = firstName[1]; // secondLetterOfFirstName is "d"
+```
+
+## Thank you for reading credits to [FreeCodeCamp](https://www.freecodecamp.org/)
