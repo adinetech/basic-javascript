@@ -95,3 +95,13 @@ JavaScript uses the `-` symbol for subtraction.
 ```js
 myVar = 12 - 6; // assigned 6
 ```
+
+## Basic JavaScript: Multiply Two Numbers with JavaScript
+> We can also multiply one number by another.
+
+JavaScript uses the `*` symbol for multiplication of two numbers.
+
+### Example
+```js
+myVar = 13 * 13; // assigned 169
+```
