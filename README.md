@@ -48,3 +48,10 @@ myVar = 5;
 myNum = myVar;
 ```
 This assigns `5` to `myVar` and then resolves `myVar` to `5` again and assigns it to `myNum`.
+
+## Basic JavaScript: Initializing Variables with the Assignment Operator
+> It is common to initialize a variable to an initial value in the same line as it is declared.
+```js
+var myVar = 0;
+```
+Creates a new `variable` called `myVar` and assigns it an initial value of `0`.
