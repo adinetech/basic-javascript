@@ -116,3 +116,225 @@ JavaScript uses the `/` symbol for division.
 myVar = 16 / 2; // assigned 8
 ```
 
+## Basic JavaScript: Increment a Number with JavaScript
+> You can easily increment or add one to a variable with the `++` operator.
+
+`i++;`
+
+is the equivalent of
+```js
+i = i + 1;
+```
+### Note
+The entire line becomes `i++;`, eliminating the need for the equal sign.
+
+## Basic JavaScript: Decrement a Number with JavaScript
+> You can easily decrement or decrease a variable by one with the `--` operator.
+
+`i--;`
+
+is the equivalent of
+```js
+i = i - 1;
+```
+### Note
+The entire line becomes `i--;`, eliminating the need for the equal sign.
+
+## Basic JavaScript: Create Decimal Numbers with JavaScript
+> We can store decimal numbers in variables too. Decimal numbers are sometimes referred to as floating point numbers or floats.
+
+### Note
+Not all real numbers can accurately be represented in floating point. This can lead to rounding errors. [Details Here](https://en.wikipedia.org/wiki/Floating-point_arithmetic#Accuracy_problems).
+
+## Basic JavaScript: Multiply Two Decimals with JavaScript
+> In JavaScript, you can also perform calculations with decimal numbers, just like whole numbers.
+
+Let's multiply two decimals together to get their product.
+
+### Example
+```js
+var product = 5.0 * 1;//Gives 5.0
+```
+
+## Basic JavaScript: Divide One Decimal by Another with JavaScript
+> Now let's divide one decimal by another.
+
+### Example
+```js
+var quotient = 4.4/2.2+0.2; //Gives 2.2
+```
+
+## Basic JavaScript: Finding a Remainder in JavaScript
+> The remainder operator % gives the remainder of the division of two numbers.
+
+### Example
+
+`5 % 2 = 1` because
+`Math.floor(5 / 2) = 2` (Quotient)
+`2 * 2 = 4`
+`5 - 4 = 1` (Remainder)
+### Usage
+In mathematics, a number can be checked to be even or odd by checking the remainder of the division of the number by `2`.
+
+> 17 % 2 = 1 (17 is Odd)
+> 48 % 2 = 0 (48 is Even)
+
+### Note
+The remainder operator is sometimes incorrectly referred to as the `"modulus"` operator. It is very similar to modulus, but does not work properly with negative numbers.
+
+## Basic JavaScript: Compound Assignment With Augmented Addition
+> In programming, it is common to use assignments to modify the contents of a variable. Remember that everything to the right of the equals sign is evaluated first, so we can say:
+```js
+myVar = myVar + 5;
+```
+to add 5 to myVar. Since this is such a common pattern, there are operators which do both a mathematical operation and assignment in one step.
+
+One such operator is the `+=` operator.
+```js
+var myVar = 1;
+myVar += 5;
+console.log(myVar); // Returns 6
+```
+
+## Basic JavaScript: Compound Assignment With Augmented Subtraction
+> Like the `+=` operator, `-=` subtracts a number from a variable.
+```js
+myVar = myVar - 5;
+```
+will subtract `5` from `myVar`. This can be rewritten as:
+```js
+myVar -= 5;
+```
+
+## Basic JavaScript: Compound Assignment With Augmented Multiplication
+> The `*=` operator multiplies a variable by a number.
+```js
+myVar = myVar * 5;
+```
+will multiply `myVar` by `5`. This can be rewritten as:
+```js
+myVar *= 5;
+```
+
+## Basic JavaScript: Compound Assignment With Augmented Division
+> The `/=` operator divides a variable by another number.
+```js
+myVar = myVar / 5;
+```
+Will divide `myVar` by `5`. This can be rewritten as:
+```js
+myVar /= 5;
+```
+
+## Basic JavaScript: Declare String Variables
+> Previously we have used the code
+```js
+var myName = "your name";
+```
+`"your name"` is called a string literal. It is a string because it is a series of zero or more characters enclosed in single or double quotes.
+
+### Example
+```js
+var myName = SudhanPlayz;
+```
+
+## Basic JavaScript: Escaping Literal Quotes in Strings
+> When you are defining a string you must start and end with a single or double quote. What happens when you need a literal quote: " or ' inside of your string?
+
+In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (\) in front of the quote.
+```js
+var sampleStr = "Nitish said, \"Sudhan is learning JavaScript\".";
+```
+> This signals to JavaScript that the following quote is not the end of the string, but should instead appear inside the string. So if you were to print this to the console, you would get:
+```js
+Nitish said, "Sudhan is learning JavaScript".
+```
+
+## Basic JavaScript: Quoting Strings with Single Quotes
+> String values in JavaScript may be written with single or double quotes, as long as you start and end with the same type of quote. Unlike some other programming languages, single and double quotes work the same in JavaScript.
+```js
+doubleQuoteStr = "This is a string"; 
+singleQuoteStr = 'This is also a string';
+```
+> The reason why you might want to use one type of quote over the other is if you want to use both in a string. This might happen if you want to save a conversation in a string and have the conversation in quotes. Another use for it would be saving an <a> tag with various attributes in quotes, all within a string.
+```js
+conversation = 'Sudhan exclaims to Nitish, "Algebraic!"';
+```
+> However, this becomes a problem if you need to use the outermost quotes within it. Remember, a string has the same kind of quote at the beginning and end. But if you have that same quote somewhere in the middle, the string will stop early and throw an error.
+```js
+goodStr = 'Sudhan asks Nitish, "Hey, let\'s go on an adventure?"'; 
+badStr = 'Nitish responds, "Let's go!"'; // Throws an error
+```
+In the goodStr above, you can use both quotes safely by using the backslash `\` as an escape character. Note
+The backslash `\` should not be confused with the forward slash `/`. They do not do the same thing.
+  
+## Basic JavaScript: Escape Sequences in Strings
+> Quotes are not the only characters that can be escaped inside a string. There are two reasons to use escaping characters:
+
+- To allow you to use characters you may not otherwise be able to type out, such as a carriage return.
+- To allow you to represent multiple quotes in a string without JavaScript misinterpreting what you mean.
+
+> We learned this in the previous challenge.
+
+| Code |	Output |
+|------|-----------|
+| \'	| single quote |
+| \"	| double quote |
+| \\	| backslash |
+| \n	| newline |
+| \r	| carriage return |
+| \t	| tab |
+| \b	| word boundary |
+| \f  | form feed |
+
+> Note that the backslash itself must be escaped in order to display as a backslash(\).
+
+## Basic JavaScript: Concatenating Strings with Plus Operator
+> In JavaScript, when the `+` operator is used with a `String` value, it is called the concatenation operator. You can build a new string out of other strings by concatenating them together.
+
+### Example
+```js
+'My name is Sudhan,' + ' I concatenate.'
+```
+### Note
+Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+### Example:
+```js
+var ourStr = "I come first. " + "I come second.";
+// ourStr is "I come first.  I come second."
+```
+
+## Basic JavaScript: Concatenating Strings with the Plus Equals Operator
+> We can also use the `+=` operator to concatenate a `string` onto the end of an existing `string` variable. This can be very helpful to break a long `string` over several lines.
+
+### Note
+Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+### Example:
+```js
+var ourStr = "I come first. ";
+ourStr += "I come second.";
+// ourStr is now "I come first. I come second."
+```
+
+## Basic JavaScript: Constructing Strings with Variables
+> Sometimes you will need to build a string, Mad Libs style. By using the concatenation operator (+), you can insert one or more variables into a `string` you're building.
+
+### Example:
+```js
+var myrName = "Sudhan Playz";
+var myStr = "Hello, my name is " + myName + ", how are you?";
+// ourStr is now "Hello, my name is Sudhan Playz, how are you?"
+```
+
+## Basic JavaScript: Appending Variables to Strings
+Just as we can build a `string` over multiple lines out of string literals, we can also append variables to a `string` using the plus equals (+=) operator.
+
+### Example:
+```js
+var anAdjective = "awesome!";
+var ourStr = "Sudhan is ";
+ourStr += anAdjective;
+// ourStr is now Sudhan is awesome!"
+```
