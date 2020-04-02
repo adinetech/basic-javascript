@@ -85,3 +85,13 @@ JavaScript uses the `+` symbol as an addition operator when placed between two n
 ```js
 myVar = 5 + 10; // assigned 15
 ```
+
+## Basic JavaScript: Subtract One Number from Another with JavaScript
+> We can also subtract one number from another.
+
+JavaScript uses the `-` symbol for subtraction.
+
+### Example
+```js
+myVar = 12 - 6; // assigned 6
+```
