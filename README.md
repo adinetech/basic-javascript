@@ -1,6 +1,6 @@
 # Learning Basic JavaScript
 
-I am Learning JavaScript in [FreeCodeCamp.org](https://freecodecamp.org). As i was completing a lesson, I will update this readme.md with what I studied there.
+I am Learning JavaScript in [FreeCodeCamp.org](https://freecodecamp.org). As i was completing a lesson, I will update this readme.md with what I learned there.
 
 ## Basic JavaScript: Comment Your JavaScript Code
 
