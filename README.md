@@ -14,7 +14,7 @@ Using `//` to ignore the remainder of the text on the current line:
 // This is an in-line comment.
 ```
 
-You can make a multi-line comment beginning with `/*` and ending with `*/`:
+We can make a multi-line comment beginning with `/*` and ending with `*/`:
 
 ```js
 /* This is a
